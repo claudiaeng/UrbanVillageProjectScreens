@@ -1,1 +1,12 @@
-# UrbanVillageProjectScreens
+<h1 align="center">Urban Village Project Screens</h1>
+<div align="center"><strong>made by <a href="https://github.com/claudiaeng">claudiaeng</a></strong></div>
+<div align="center">Recreated UI screens from the conceptual Urban Village Project. Read more about the project <a href ="https://www.urbanvillageproject.com">here</a>.</div>
+
+## Previews
+
+| Original | Recreation |
+|--|--|
+| ![](screen1.png) | |
+
+## To-do
+- [ ] Dark mode adjsutments
