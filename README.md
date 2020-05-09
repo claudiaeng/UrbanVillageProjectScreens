@@ -4,9 +4,7 @@
 
 ## Previews
 
-| Original | Recreation |
-|--|--|
-| ![](screen1.png) | |
+| Original | Recreation | To-do |
+|--|--|--|
+| ![](~/Screenshots/screen1.png) | | - [ ] Dark mode adjsutments |
 
-## To-do
-- [ ] Dark mode adjsutments
