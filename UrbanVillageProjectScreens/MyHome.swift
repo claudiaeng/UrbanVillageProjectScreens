@@ -26,6 +26,14 @@ let secondaryAccentTextColor: Color = Color.init(red: 182/255,
                                        green: 182/255,
                                        blue: 179/255)
 
+let secondCardColor: Color = Color.init(red: 148/255,
+green: 141/255,
+blue: 119/255)
+
+let thirdCardColor: Color = Color.init(red: 107/255,
+green: 95/255,
+blue: 91/255)
+
 
 
 struct MyHome: View {
@@ -86,10 +94,12 @@ struct MyHome: View {
                             
                             Text("1,938").kerning(-0.5).foregroundColor(secondaryColor).font(.custom("HelveticaNeue", size: 55))
                         }
-                    }.padding([.all], 15).background(Color.white).cornerRadius(20)
+                    }.padding([.all], 15).background(Color.white).cornerRadius(25)
                     
                     //other cards
-                    VStack {
+                    VStack(spacing: 0.0) {
+                        
+                        //first card
                         HStack(alignment: .top) {
                             VStack(alignment: .leading) {
                                 Text("Base rent").kerning(-0.5).foregroundColor(Color.white).font(.custom("HelveticaNeue-Regular", size: 22))
@@ -101,7 +111,32 @@ struct MyHome: View {
                             Image("woman").resizable().scaledToFill().frame(width: 25, height: 25)
                                 .clipShape(Circle())
                         }.padding([.all], 15).background(firstCardColor)
-                    }.cornerRadius(20)
+                        
+                        HStack(alignment: .top) {
+                            VStack(alignment: .leading) {
+                                Text("Energy").kerning(-0.5).foregroundColor(Color.white).font(.custom("HelveticaNeue-Regular", size: 22))
+                                                                Text("120").kerning(-0.5).foregroundColor(accentTextColor).font(.custom("HelveticaNeue-Regular", size: 22))
+                            }
+                            
+                            Spacer()
+                            
+                            Image("woman").resizable().scaledToFill().frame(width: 25, height: 25)
+                                .clipShape(Circle())
+                        }.padding([.all], 15).background(secondCardColor)
+                        
+                        HStack(alignment: .top) {
+                            VStack(alignment: .leading) {
+                                Text("Recreation").kerning(-0.5).foregroundColor(Color.white).font(.custom("HelveticaNeue-Regular", size: 22))
+                                                                Text("78").kerning(-0.5).foregroundColor(accentTextColor).font(.custom("HelveticaNeue-Regular", size: 22))
+                            }
+                            
+                            Spacer()
+                            
+                            Image("woman").resizable().scaledToFill().frame(width: 25, height: 25)
+                                .clipShape(Circle())
+                        }.padding([.all], 15).background(thirdCardColor)
+                        
+                    }.cornerRadius(25)
                 }.padding([.horizontal], 20)
                 
             }.padding([.top], 75)
