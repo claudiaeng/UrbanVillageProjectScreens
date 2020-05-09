@@ -1,36 +1,27 @@
-//
-//  ContentView.swift
-//  UrbanVillageProjectScreens
-//
-//  Created by Claudia Eng on 5/8/20.
 //  Copyright © 2020 Studio10011. All rights reserved.
-//
 
 import SwiftUI
 
 struct ContentView: View {
     @State private var selection = 0
- 
+    
     var body: some View {
         TabView(selection: $selection){
-            Text("First View")
-                .font(.title)
+            MyHome()
                 .tabItem {
                     VStack {
                         Image("first")
-                        Text("First")
                     }
-                }
-                .tag(0)
+            }
+            .tag(0)
             Text("Second View")
                 .font(.title)
                 .tabItem {
                     VStack {
-                        Image("second")
-                        Text("Second")
+                        Image("second").padding([.top], 20)
                     }
-                }
-                .tag(1)
+            }
+            .tag(1)
         }
     }
 }
