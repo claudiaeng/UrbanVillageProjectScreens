@@ -127,7 +127,7 @@ struct MyHome: View {
                             
                             Spacer()
                             
-                            Image(systemName: "b.circle.fill").foregroundColor(Color.white).font(.system(size: 35, weight: .regular)).padding([.top], 5)
+                            Image(systemName: "b.circle.fill").foregroundColor(Color.white.opacity(0.8)).font(.system(size: 35, weight: .regular)).padding([.top], 5)
                             
                         }.padding([.all], 15).background(firstCardColor)
                         
@@ -139,7 +139,7 @@ struct MyHome: View {
                             
                             Spacer()
                             
-                            Image(systemName: "e.circle.fill").foregroundColor(Color.white).font(.system(size: 35, weight: .regular)).padding([.top], 5)
+                            Image(systemName: "e.circle.fill").foregroundColor(Color.white.opacity(0.8)).font(.system(size: 35, weight: .regular)).padding([.top], 5)
                             
                         }.padding([.all], 15).background(secondCardColor)
                         
@@ -151,7 +151,7 @@ struct MyHome: View {
                             
                             Spacer()
                             
-                            Image(systemName: "r.circle.fill").foregroundColor(Color.white).font(.system(size: 35, weight: .regular)).padding([.top], 5)
+                            Image(systemName: "r.circle.fill").foregroundColor(Color.white.opacity(0.8)).font(.system(size: 35, weight: .regular)).padding([.top], 5)
                             
                         }.padding([.all], 15).background(thirdCardColor)
                         
@@ -164,7 +164,7 @@ struct MyHome: View {
                                 
                                 Spacer()
                                 
-                                Image(systemName: "f.circle.fill").foregroundColor(Color.white).font(.system(size: 35, weight: .regular)).padding([.top], 5)
+                                Image(systemName: "f.circle.fill").foregroundColor(Color.white.opacity(0.8)).font(.system(size: 35, weight: .regular)).padding([.top], 5)
                             }
                             
                             dividerColor.frame(height: 2)
@@ -189,7 +189,7 @@ struct MyHome: View {
                                 
                                 HStack {
                                     Text("Change plan").kerning(-0.5).foregroundColor(accentTextColor).font(.custom("HelveticaNeue-Medium", size: 14))
-                                    }.padding([.vertical], 2).padding([.horizontal], 7).background(opaqueColor).cornerRadius(10)
+                                    }.padding([.vertical], 2).padding([.horizontal], 7).background(opaqueColor.opacity(0.9)).cornerRadius(10)
                             }.padding([.bottom], 10)
                             
                             dividerColor.frame(height: 2)
