@@ -6,5 +6,5 @@
 
 | Original | Recreation | To-do |
 |--|--|--|
-| ![](~/Screenshots/screen1.png) | | - [ ] Dark mode adjsutments |
+| ![](/Screenshots/screen1.png) | | – Dark mode adjsutments |
 
