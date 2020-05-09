@@ -18,11 +18,11 @@ let accentTextColor: Color = Color.init(red: 194/255,
                                         green: 192/255,
                                         blue: 189/255)
 
-let secondaryAccentTextColor: Color = Color.init(red: 156/255,
+let firstCardColor: Color = Color.init(red: 156/255,
                                                  green: 159/255,
                                                  blue: 148/255)
 
-let firstCardColor: Color = Color.init(red: 182/255,
+let secondaryAccentTextColor: Color = Color.init(red: 182/255,
                                        green: 182/255,
                                        blue: 179/255)
 
@@ -90,14 +90,17 @@ struct MyHome: View {
                     
                     //other cards
                     VStack {
-                        HStack {
-                            Text("Base rent").kerning(-1).foregroundColor(Color.white).font(.custom("HelveticaNeue-Regular", size: 22))
+                        HStack(alignment: .top) {
+                            VStack(alignment: .leading) {
+                                Text("Base rent").kerning(-0.5).foregroundColor(Color.white).font(.custom("HelveticaNeue-Regular", size: 22))
+                                                                Text("1,430").kerning(-0.5).foregroundColor(accentTextColor).font(.custom("HelveticaNeue-Regular", size: 22))
+                            }
                             
                             Spacer()
                             
                             Image("woman").resizable().scaledToFill().frame(width: 25, height: 25)
                                 .clipShape(Circle())
-                        }.padding([.all], 20).background(firstCardColor)
+                        }.padding([.all], 15).background(firstCardColor)
                     }.cornerRadius(20)
                 }.padding([.horizontal], 20)
                 
