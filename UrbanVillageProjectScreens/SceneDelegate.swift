@@ -1,11 +1,3 @@
-//
-//  SceneDelegate.swift
-//  UrbanVillageProjectScreens
-//
-//  Created by Claudia Eng on 5/8/20.
-//  Copyright © 2020 Studio10011. All rights reserved.
-//
-
 import UIKit
 import SwiftUI
 

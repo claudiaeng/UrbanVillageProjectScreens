@@ -16,6 +16,8 @@
 		A44D1427246653BF00EC3474 /* UrbanVillageProjectScreensTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44D1426246653BF00EC3474 /* UrbanVillageProjectScreensTests.swift */; };
 		A44D1432246653BF00EC3474 /* UrbanVillageProjectScreensUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44D1431246653BF00EC3474 /* UrbanVillageProjectScreensUITests.swift */; };
 		A44D14402466564400EC3474 /* MyHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44D143F2466564400EC3474 /* MyHome.swift */; };
+		A44D14422467CDFA00EC3474 /* Today.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44D14412467CDFA00EC3474 /* Today.swift */; };
+		A44D14442467D26100EC3474 /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44D14432467D26100EC3474 /* VideoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		A44D1431246653BF00EC3474 /* UrbanVillageProjectScreensUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrbanVillageProjectScreensUITests.swift; sourceTree = "<group>"; };
 		A44D1433246653BF00EC3474 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A44D143F2466564400EC3474 /* MyHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyHome.swift; sourceTree = "<group>"; };
+		A44D14412467CDFA00EC3474 /* Today.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Today.swift; sourceTree = "<group>"; };
+		A44D14432467D26100EC3474 /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,8 @@
 				A44D141D246653BE00EC3474 /* Info.plist */,
 				A44D1417246653BE00EC3474 /* Preview Content */,
 				A44D143F2466564400EC3474 /* MyHome.swift */,
+				A44D14412467CDFA00EC3474 /* Today.swift */,
+				A44D14432467D26100EC3474 /* VideoView.swift */,
 			);
 			path = UrbanVillageProjectScreens;
 			sourceTree = "<group>";
@@ -270,7 +276,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A44D14442467D26100EC3474 /* VideoView.swift in Sources */,
 				A44D1410246653B800EC3474 /* AppDelegate.swift in Sources */,
+				A44D14422467CDFA00EC3474 /* Today.swift in Sources */,
 				A44D1412246653B800EC3474 /* SceneDelegate.swift in Sources */,
 				A44D14402466564400EC3474 /* MyHome.swift in Sources */,
 				A44D1414246653B800EC3474 /* ContentView.swift in Sources */,
