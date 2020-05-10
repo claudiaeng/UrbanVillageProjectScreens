@@ -7,4 +7,5 @@
 | Original | Recreation | To-do |
 |--|--|--|
 | ![](/Screenshots/screen1.png) | ![](/Screenshots/screen1.gif) | – Dark mode adjsutments |
+| ![](/Screenshots/screen2.png) | ![](/Screenshots/screen2.gif) | – Dark mode adjsutments |
 

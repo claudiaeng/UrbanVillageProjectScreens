@@ -2,10 +2,36 @@ import SwiftUI
 
 //COLORS
 let buttonColor = Color(#colorLiteral(red: 0.7692624927, green: 0.3453927636, blue: 0.1849986017, alpha: 1))
+let iconColor = Color(#colorLiteral(red: 0.5774407983, green: 0.5498628616, blue: 0.4827260375, alpha: 1))
 
 struct Today_Previews: PreviewProvider {
   static var previews: some View {
     Today()
+  }
+}
+
+// MARK - main return
+struct Today: View {
+  
+  var body: some View {
+    ScrollView {
+      VStack(spacing: 10) {
+        
+        topStack()
+        
+        VStack(spacing: 10.0) {
+          
+          spendCard()
+          
+          horizontalScroll()
+          
+          otherCardsView()
+          
+        }.padding([.horizontal], 20)
+        
+      }.padding([.top], 75)
+      
+    }.frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height).background(backgroundColor)
   }
 }
 
@@ -66,222 +92,167 @@ fileprivate func spendCard() -> some View {
       .cornerRadius(25)
 }
 
-// MARK - main return
-struct Today: View {
-  
-  var body: some View {
-    ScrollView {
-      VStack(spacing: 10) {
-        
-        topStack()
-        
-        VStack(spacing: 10.0) {
-          
-          spendCard()
-          
-          //other cards
-          VStack(spacing: 0.0) {
-            
-            //first card
-            HStack(alignment: .top) {
-              VStack(alignment: .leading) {
-                Text("Base rent")
-                  .kerning(-0.5)
-                  .foregroundColor(Color.white)
-                  .font(.custom("HelveticaNeue-Regular",
-                                size: 22))
-                Text("1,430")
-                  .kerning(-0.5)
-                  .foregroundColor(firstCardColor)
-                  .brightness(0.15)
-                  .font(.custom("HelveticaNeue-Regular",
-                                size: 22))
-              }
-              
-              Spacer()
-              
-              Image(systemName: "b.circle.fill")
-                .foregroundColor(Color.white.opacity(0.8))
-                .font(.system(size: 35,
-                              weight: .regular))
-                .padding([.top], 5)
-              
-            }.padding([.all], 15)
-              .background(firstCardColor)
-            
-            //second card
-            HStack(alignment: .top) {
-              VStack(alignment: .leading) {
-                Text("Energy")
-                  .kerning(-0.5)
-                  .foregroundColor(Color.white)
-                  .font(.custom("HelveticaNeue-Regular",
-                                size: 22))
-                Text("120")
-                  .kerning(-0.5)
-                  .foregroundColor(secondCardColor)
-                  .brightness(0.15)
-                  .font(.custom("HelveticaNeue-Regular",
-                                size: 22))
-              }
-              
-              Spacer()
-              
-              Image(systemName: "e.circle.fill")
-                .foregroundColor(Color.white.opacity(0.8))
-                .font(.system(size: 35,
-                              weight: .regular))
-                .padding([.top], 5)
-              
-            }.padding([.all], 15)
-              .background(secondCardColor)
-            
-            //third card
-            HStack(alignment: .top) {
-              VStack(alignment: .leading) {
-                Text("Recreation").kerning(-0.5).foregroundColor(Color.white).font(.custom("HelveticaNeue-Regular", size: 22))
-                Text("78").kerning(-0.5).foregroundColor(thirdCardColor).brightness(0.15).font(.custom("HelveticaNeue-Regular", size: 22))
-              }
-              
-              Spacer()
-              
-              Image(systemName: "r.circle.fill").foregroundColor(Color.white.opacity(0.8)).font(.system(size: 35, weight: .regular)).padding([.top], 5)
-              
-            }.padding([.all], 15).background(thirdCardColor)
-            
-            //fourth card
-            VStack {
-              HStack {
-                VStack(alignment: .leading) {
-                  Text("Food")
-                    .kerning(-0.5)
-                    .foregroundColor(Color.white)
-                    .font(.custom("HelveticaNeue-Regular", size: 22))
-                  Text("23")
-                    .kerning(-0.5)
-                    .foregroundColor(fourthCardColor)
-                    .brightness(0.15)
-                    .font(.custom("HelveticaNeue-Regular", size: 22))
-                }
-                
-                Spacer()
-                
-                Image(systemName: "f.circle.fill").foregroundColor(Color.white.opacity(0.8)).font(.system(size: 35,
-                                                                                                          weight: .regular))
-                  .padding([.top], 5)
-              }.padding([.bottom], 50)
-              
-              dividerColor.frame(height: 2)
-              
-              HStack(alignment: .top) {
-                VStack(alignment: .leading) {
-                  Text("Your meal box")
-                    .kerning(-0.5)
-                    .foregroundColor(Color.white)
-                    .font(.custom("HelveticaNeue-Regular",
-                                  size: 16))
-                  Text("Vegetarian").kerning(-0.5)                    .foregroundColor(fourthCardColor)
-                    .brightness(0.15)
-                    .font(.custom("HelveticaNeue-Regular",
-                                  size: 14))
-                }
-                
-                VStack(alignment: .leading) {
-                  Text("People")
-                    .kerning(-0.5)
-                    .foregroundColor(Color.white)
-                    .font(.custom("HelveticaNeue-Regular", size: 16))
-                  Text("2")
-                    .kerning(-0.5)
-                    .foregroundColor(fourthCardColor)
-                    .brightness(0.15)
-                    .font(.custom("HelveticaNeue-Regular", size: 14))
-                }
-                
-                VStack(alignment: .leading) {
-                  Text("Days")
-                    .kerning(-0.5)
-                    .foregroundColor(Color.white)
-                    .font(.custom("HelveticaNeue-Regular", size: 16))
-                  Text("5")
-                    .kerning(-0.5)
-                    .foregroundColor(fourthCardColor)
-                    .brightness(0.15)                    .font(.custom("HelveticaNeue-Regular", size: 14))
-                }
-                
-                Spacer()
-                
-                HStack {
-                  Text("Change plan").kerning(-0.5).foregroundColor(accentTextColor).font(.custom("HelveticaNeue-Medium", size: 14))
-                }.padding([.vertical], 2).padding([.horizontal], 7).background(opaqueColor.opacity(0.9)).cornerRadius(10)
-              }.padding([.bottom], 10)
-              
-              dividerColor.frame(height: 2)
-              
-              HStack {
-                VStack(alignment: .leading) {
-                  Text("Next Delivery")
-                    .kerning(-0.5)
-                    .foregroundColor(Color.white)
-                    .font(.custom("HelveticaNeue-Regular", size: 16))
-                  Text("Monday 4th 4pm")
-                    .kerning(-0.5)
-                    .foregroundColor(fourthCardColor)
-                    .brightness(0.15)
-                    .font(.custom("HelveticaNeue-Regular", size: 14))
-                }
-                
-                Spacer()
-                
-              }.padding([.bottom], 10)
-              
-            }.padding([.all], 15).background(fourthCardColor)
-            
-            
-          }.cornerRadius(25)
-        }.padding([.horizontal], 20)
-        
-      }.padding([.top], 75)
-      
-      
-    }.frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height).background(backgroundColor)
-  }
-}
-
 fileprivate func horizontalScroll() -> some View {
   
   return // top horizontal scroll
-    ScrollView(.horizontal, showsIndicators: false) {
-      HStack {
-        Color.clear.frame(width: 13)
+    VStack {
+      HStack(spacing: 2.0) {
         
-        VStack {
-          Text("Subscriptions")
+        VStack(alignment: .leading) {
+          HStack {
+            Image(systemName: "b.square.fill")
+              .foregroundColor(iconColor)
+              .opacity(0.85)
+              .font(.custom("HelveticaNeue-Medium", size: 35))
+              .padding([.bottom], 25)
+          }
+          HStack {
+            Text("Book workspace")
+              .kerning(-0.5)
+              .foregroundColor(iconColor)
+              .font(.custom("HelveticaNeue-Medium", size: 14))
+            Spacer()
+          }
+          
+        }.frame(minWidth: 0, maxWidth: .infinity)
+          .padding([.all], 15)
+          .background(Color.white)
+          .cornerRadius(15)
+        
+        VStack(alignment: .leading) {
+          HStack {
+            Image(systemName: "l.square.fill")
+              .foregroundColor(iconColor)
+              .opacity(0.85)
+              .font(.custom("HelveticaNeue-Medium", size: 35))
+              .padding([.bottom], 25)
+          }
+          HStack {
+            Text("Laundry service")
+              .kerning(-0.5)
+              .foregroundColor(iconColor)
+              .font(.custom("HelveticaNeue-Medium", size: 14))
+            Spacer()
+          }
+          
+        }.frame(minWidth: 0, maxWidth: .infinity)
+          .padding([.all], 15)
+          .background(Color.white)
+          .cornerRadius(15)
+        
+        
+        VStack(alignment: .leading) {
+          HStack {
+            Image(systemName: "r.square.fill")
+              .foregroundColor(iconColor)
+              .opacity(0.85)
+              .font(.custom("HelveticaNeue-Medium", size: 35))
+              .padding([.bottom], 25)
+          }
+          HStack {
+            Text("Reserve")
+              .kerning(-0.5)
+              .foregroundColor(iconColor)
+              .font(.custom("HelveticaNeue-Medium", size: 14))
+            Spacer()
+          }
+          HStack {
+            Text("bike")
+              .kerning(-0.5)
+              .foregroundColor(iconColor)
+              .font(.custom("HelveticaNeue-Medium", size: 14))
+            Spacer()
+          }
+          
+        }.frame(minWidth: 0, maxWidth: .infinity)
+        .padding([.all], 15)
+          .background(Color.white)
+          .cornerRadius(15)
+        
+      }.frame(minWidth: 0, maxWidth: .infinity)
+      
+  }
+}
+
+fileprivate func otherCardsView() -> some View {
+  return //other cards
+    VStack(spacing: 0.0) {
+      
+      //first card
+      HStack(alignment: .top) {
+        VStack(alignment: .leading) {
+          Text("My calendar")
             .kerning(-0.5)
-            .foregroundColor(secondaryColor)
-            .font(.custom("HelveticaNeue-Medium", size: 18))
-            .padding([.vertical], 5)
-            .padding([.horizontal], 10)
-            .background(Color.white)
-            .cornerRadius(15)
-        }.onTapGesture {
-          print("tapped")
+            .foregroundColor(iconColor)
+            .font(.custom("HelveticaNeue-Regular",
+                          size: 22))
         }
         
-        Color.clear.frame(width: 90)
+        Spacer()
         
-        Text("Utilities").kerning(-0.5)
-          .foregroundColor(secondaryAccentTextColor)
-          .font(.custom("HelveticaNeue-Medium",
-                        size: 18))
+        Image(systemName: "ellipsis")
+          .foregroundColor(iconColor)
+          .opacity(0.8)
+          .font(.system(size: 22,
+                        weight: .light))
+          .padding([.all], 2)
         
-        Color.clear.frame(width: 20)
+      }.padding([.all], 15)
+        .background(Color.white)
+      
+      iconColor.frame(height: 1).brightness(0.35)
+      
+      //second card
+      HStack(alignment: .top) {
+          Text("19:00")
+            .kerning(-0.5)
+            .foregroundColor(iconColor)
+            .font(.custom("HelveticaNeue-Regular",
+                          size: 15))
+            .padding([.trailing], 5)
         
-        Text("Finances")
+          Text("Spanish class booked")
+            .kerning(-0.5)
+            .foregroundColor(iconColor)
+            .font(.custom("HelveticaNeue-Regular",
+                          size: 15))
+        
+        Spacer()
+        
+        Image(systemName: "plus")
+          .foregroundColor(iconColor)
+          .font(.system(size: 17,
+                        weight: .bold))
+          .padding([.top], 0)
+        
+      }.padding([.all], 15)
+        .background(Color.white)
+      
+      //second card
+      HStack(alignment: .top) {
+        Text("19:00")
           .kerning(-0.5)
-          .foregroundColor(secondaryAccentTextColor)
-          .font(.custom("HelveticaNeue-Medium",
-                        size: 18))
-      }
-    }.padding([.bottom], 20).padding([.top], 15)
+          .foregroundColor(iconColor)
+          .font(.custom("HelveticaNeue-Regular",
+                        size: 15))
+          .padding([.trailing], 5)
+        
+        Text("Spanish class booked")
+          .kerning(-0.5)
+          .foregroundColor(iconColor)
+          .font(.custom("HelveticaNeue-Regular",
+                        size: 15))
+        
+        Spacer()
+        
+        Image(systemName: "plus")
+          .foregroundColor(iconColor)
+          .font(.system(size: 17,
+                        weight: .bold))
+          .padding([.top], 0)
+        
+      }.padding([.all], 15)
+        .background(Color.white)
+      
+    }.cornerRadius(25)
 }
