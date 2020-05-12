@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A447FC7B2468963E0042808D /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = A447FC7A2468963E0042808D /* Color.swift */; };
+		A447FC7D246A43070042808D /* Hub.swift in Sources */ = {isa = PBXBuildFile; fileRef = A447FC7C246A43070042808D /* Hub.swift */; };
 		A44D1410246653B800EC3474 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44D140F246653B800EC3474 /* AppDelegate.swift */; };
 		A44D1412246653B800EC3474 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44D1411246653B800EC3474 /* SceneDelegate.swift */; };
 		A44D1414246653B800EC3474 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44D1413246653B800EC3474 /* ContentView.swift */; };
@@ -40,6 +41,7 @@
 
 /* Begin PBXFileReference section */
 		A447FC7A2468963E0042808D /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		A447FC7C246A43070042808D /* Hub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hub.swift; sourceTree = "<group>"; };
 		A44D140C246653B700EC3474 /* UrbanVillageProjectScreens.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UrbanVillageProjectScreens.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A44D140F246653B800EC3474 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A44D1411246653B800EC3474 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 				A44D14412467CDFA00EC3474 /* Today.swift */,
 				A44D14432467D26100EC3474 /* VideoView.swift */,
 				A447FC7A2468963E0042808D /* Color.swift */,
+				A447FC7C246A43070042808D /* Hub.swift */,
 			);
 			path = UrbanVillageProjectScreens;
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 				A44D14442467D26100EC3474 /* VideoView.swift in Sources */,
 				A44D1410246653B800EC3474 /* AppDelegate.swift in Sources */,
 				A447FC7B2468963E0042808D /* Color.swift in Sources */,
+				A447FC7D246A43070042808D /* Hub.swift in Sources */,
 				A44D14422467CDFA00EC3474 /* Today.swift in Sources */,
 				A44D1412246653B800EC3474 /* SceneDelegate.swift in Sources */,
 				A44D14402466564400EC3474 /* MyHome.swift in Sources */,

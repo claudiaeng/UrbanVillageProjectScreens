@@ -8,4 +8,5 @@
 |--|--|--|
 | ![](/Screenshots/screen1.png) | ![](/Screenshots/screen1.gif) | – Dark mode adjsutments |
 | ![](/Screenshots/screen2.png) | ![](/Screenshots/screen2.gif) | – Dark mode adjsutments |
+| ![](/Screenshots/screen3.png) | ![](/Screenshots/screen3app.png) | – Dark mode adjsutments |
 
