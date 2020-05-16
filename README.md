@@ -2,6 +2,7 @@
 <div align="center"><strong>made by <a href="https://github.com/claudiaeng">claudiaeng</a></strong></div>
 <div align="center">Recreated UI screens from the conceptual Urban Village Project.</div>
 <div align="center">Read more about the project <a href ="https://www.urbanvillageproject.com">here</a>.</div>
+<div align="center">Please open an issue if you have requests on improving this repo.</div>
 
 ## Previews
 
