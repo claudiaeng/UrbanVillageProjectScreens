@@ -1,4 +1,5 @@
-<h1 align="center">UrbanVillageProjectScreens</h1>
+<h1 align="center"><mono>CODE ASSETS STORE: <a href ="https://www.candl.tech/store">CANDL TECH</mono></h1>
+<h2 align="center">UrbanVillageProjectScreens</h2>
 <div align="center">Recreated UI screens from the conceptual Urban Village Project.</div>
 <div align="center">Read more about the project <a href ="https://www.urbanvillageproject.com">here</a>.</div>
 <div align="center">Please open an issue if you have requests on improving this repo.</div>
